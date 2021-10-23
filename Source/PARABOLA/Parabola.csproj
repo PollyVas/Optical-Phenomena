@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD0C9FB2-F88A-4EFE-9EC2-FBD676AA592E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Parabola</RootNamespace>
+    <AssemblyName>Parabola</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>rays.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basicLine.cs" />
+    <Compile Include="FormCaystica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaystica.Designer.cs">
+      <DependentUpon>FormCaystica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaysticaCaystica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaysticaCaystica.Designer.cs">
+      <DependentUpon>FormCaysticaCaystica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParabola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParabola.Designer.cs">
+      <DependentUpon>FormParabola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMirror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMirror.Designer.cs">
+      <DependentUpon>FormMirror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRealCays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRealCays.Designer.cs">
+      <DependentUpon>FormRealCays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ray.cs" />
+    <EmbeddedResource Include="FormCaystica.resx">
+      <DependentUpon>FormCaystica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaysticaCaystica.resx">
+      <DependentUpon>FormCaysticaCaystica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParabola.resx">
+      <DependentUpon>FormParabola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMirror.resx">
+      <DependentUpon>FormMirror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRealCays.resx">
+      <DependentUpon>FormRealCays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kvadr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reflective.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reflective1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147264-Rudolph-s-Nose-Is-Cold.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute_deer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute_deer1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute_deer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oie_3191455fM83FE0V.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1058-2840.ico" />
+    <Content Include="prizma1.ico" />
+    <Content Include="rays.ico" />
+    <None Include="Resources\strelka.png" />
+    <None Include="Resources\strelka1.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\56.png" />
+    <None Include="Resources\Ymin.png" />
+    <None Include="Resources\Ymax.png" />
+    <None Include="Resources\Xmin.png" />
+    <None Include="Resources\Xmax.png" />
+    <None Include="Resources\y1.png" />
+    <None Include="Resources\y.png" />
+    <None Include="Resources\yj.png" />
+    <None Include="Resources\www.GetBg.net_Backgrounds_Rays_and_glare_in_the_green_water_106522_.jpg" />
+    <None Include="Resources\89.jpg" />
+    <None Include="Resources\green-dotted-pattern-wallpaper-60514.jpg" />
+    <None Include="Resources\31.jpg" />
+    <None Include="Resources\zelenyy_fon_nezhnost_abstrakciya_47151_602x3391.jpg" />
+    <None Include="Resources\wall.jpg" />
+    <None Include="Resources\zelenyy_fon_nezhnost_abstrakciya_47151_602x339.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\Чайник.png" />
+    <None Include="Resources\post-3078-1222435788.jpg" />
+    <None Include="Resources\Стрелочка.png" />
+    <None Include="Resources\Rfecnbrf.PNG" />
+    <None Include="Resources\3,14.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
